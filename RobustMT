@@ -1,0 +1,3 @@
+For creating a single file corpus from the CzEn data (which was tab seperated and was split into parts), I used the following command:
+for FILE in `ls ./train/ | sort -g`; do cut -f4 ./train/$FILE >> train_en.txt ; done
+
